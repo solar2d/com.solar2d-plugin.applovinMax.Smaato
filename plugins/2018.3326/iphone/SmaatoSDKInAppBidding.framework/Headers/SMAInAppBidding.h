@@ -14,7 +14,7 @@
 Class \c SMAInAppBidding provided methods to support In-App-Bidding solution when Smaato SDK acts
  as service for Smaato ad response rendering that is result of server-to-server exchange.
 */
-@interface SMAInAppBidding : NSObject
+@interface SMAInAppBidding: NSObject
 
 /**
 Save \c SMAInAppBid object into internal cache for future usage by SmaatoSDK public API for ad rendering and management.

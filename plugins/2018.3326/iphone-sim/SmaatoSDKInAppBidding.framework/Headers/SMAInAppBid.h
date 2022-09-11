@@ -11,7 +11,7 @@
 /**
 Class \c SMAInAppBid acts as container for whole body of ad response in OpenRTB 2.5 format
 */
-@interface SMAInAppBid : NSObject
+@interface SMAInAppBid: NSObject
 
 /// raw body of ad response
 @property (nonatomic, copy, nullable, readonly) NSData *jsonBody;

@@ -9,3 +9,4 @@
 //
 
 #import <SmaatoSDKUnifiedBidding/SmaatoSDK+UnifiedBidding.h>
+#import <SmaatoSDKUnifiedBidding/SMAUBNativeAdSupportedAssets.h>

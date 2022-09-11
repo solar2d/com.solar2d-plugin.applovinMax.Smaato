@@ -24,7 +24,7 @@ typedef NS_ENUM(NSUInteger, SMAUbBannerSize) {
     kSMAUbBannerSizeLeaderboard_728x90
 };
 
-@interface SMAUbBid : NSObject
+@interface SMAUbBid: NSObject
 /**
  Adjusted bid price on the base of the chosen granularity of ad displaying
  */
@@ -36,7 +36,7 @@ typedef NS_ENUM(NSUInteger, SMAUbBannerSize) {
  Mopub best practice:
  A publisher can use bidPrice to create own Prebid (target) keyword for Mopub.
  */
-@property (nonatomic, copy, readonly, nonnull) NSString *mopubPrebidKeyword;
+@property (nonatomic, copy, readonly, nonnull) NSString *targetPrebidKeyword;
 
 /**
  Optional helper method provides metadata dictionary that allows to fetch related ad creative in case
@@ -46,7 +46,7 @@ typedef NS_ENUM(NSUInteger, SMAUbBannerSize) {
  */
 @property (nonatomic, copy, readonly, nonnull) NSDictionary *metaData;
 
-+ (null_unspecified instancetype) new NS_UNAVAILABLE;
++ (null_unspecified instancetype)new NS_UNAVAILABLE;
 - (null_unspecified instancetype)init NS_UNAVAILABLE;
 
 @end
@@ -87,5 +87,25 @@ typedef NS_ENUM(NSUInteger, SMAUbBannerSize) {
  */
 + (void)prebidRewardedInterstitialForAdSpaceId:(NSString *_Nonnull)adSpaceId
                                     completion:(void (^_Nonnull)(SMAUbBid *_Nullable bid, NSError *_Nullable error))completion;
+
+/**
+ The method sends prebid request for Outstream Smaato ads
+
+ @param adSpaceId       AdspaceId identifier assigned by Smaato. Unified Bidding support should be enabled for this AdspaceId in Smaato SPX.
+                        Must not be \c nil
+ @param completion      Callback is invoked, when prebid response processing has been finished.
+                        `bid` or `error` values reflect state of Prebid request. Must not be \c nil.
+ */
++ (void)prebidOutstreamForAdSpaceId:(NSString *_Nonnull)adSpaceId completion:(void (^_Nonnull)(SMAUbBid *_Nullable, NSError *_Nullable))completion;
+
+/**
+ The method sends prebid request for Native Smaato ads
+
+ @param adSpaceId       AdspaceId identifier assigned by Smaato. Unified Bidding support should be enabled for this AdspaceId in Smaato SPX.
+                        Must not be \c nil
+ @param completion      Callback is invoked, when prebid response processing has been finished.
+                        `bid` or `error` values reflect state of Prebid request. Must not be \c nil.
+ */
++ (void)prebidNativeForAdSpaceId:(NSString *_Nonnull)adSpaceId requiredAssets:(NSSet *_Nullable)requiredAssets completion:(void (^_Nonnull)(SMAUbBid *_Nullable, NSError *_Nullable))completion;
 
 @end

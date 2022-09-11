@@ -6,11 +6,11 @@
 	<dict>
 		<key>Headers/SMAInAppBid.h</key>
 		<data>
-		c4zxlvglTSAm/J3MneO+Qh9fNZw=
+		x+YNHTn3KzAsZpyIZYXTPuF7ahc=
 		</data>
 		<key>Headers/SMAInAppBidding.h</key>
 		<data>
-		p8yelCSl1fAfQYSOoVXQoVR2bPc=
+		55kCqLzlgVJR8QDHW52prGNqLpA=
 		</data>
 		<key>Headers/SmaatoSDKInAppBidding.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		YpP9hm7MzFehFH8O8Bp/L1oT1rI=
+		fH49wSVMxoFPPKPOdWPBrWvXTik=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -31,22 +31,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			c4zxlvglTSAm/J3MneO+Qh9fNZw=
+			x+YNHTn3KzAsZpyIZYXTPuF7ahc=
 			</data>
 			<key>hash2</key>
 			<data>
-			90cnyKolGWzS0OJEdeF8TnAJKF+xndkhXaIdED6SQJc=
+			/j0czaiZ04/jz/wFXeHxRJFSQqJIevah2jpEtPQgMx8=
 			</data>
 		</dict>
 		<key>Headers/SMAInAppBidding.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			p8yelCSl1fAfQYSOoVXQoVR2bPc=
+			55kCqLzlgVJR8QDHW52prGNqLpA=
 			</data>
 			<key>hash2</key>
 			<data>
-			1gv5pPgmXr8mhJrbyyFIy6ORgI6XYwvFzWdg+6n+bnw=
+			cI50V1/h2BYUBtu7S5ZnCpJcvVMqZ4NlwnoUoJnTuMQ=
 			</data>
 		</dict>
 		<key>Headers/SmaatoSDKInAppBidding.h</key>
