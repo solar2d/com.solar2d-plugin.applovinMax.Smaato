@@ -4,5 +4,5 @@ repositories {
 	maven { url "https://s3.amazonaws.com/smaato-sdk-releases/" }
 }
 dependencies {
-		 implementation 'com.applovin.mediation:smaato-adapter:22.0.3.0'
+		 implementation 'com.applovin.mediation:smaato-adapter:22.4.0.0'
 }
